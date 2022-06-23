@@ -1,0 +1,24 @@
+.container_testimonios{
+    
+    
+   
+   margin: 150px;
+    
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.caja{
+  border-radius: 15px;
+    height: 150px;
+    margin: 15px;
+    margin-top: 15PX;
+    text-align: center;
+}
+
+
+.caja:hover {
+    
+    height: 450px;
+    transition: 1s;
+}

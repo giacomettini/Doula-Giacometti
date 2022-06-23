@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@import './variables/colores';
+@import './contacto.scss';
+@import './servicios.scss';
+@import './sobre_mi.scss';
+@import './testimonio.scss';
+
+
+.containertexto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: beige;
+    gap: 0px 0px;
+    grid-template-areas:
+
+        "section1 section1 section2 section2"
+        "section1 section1 section2 section2"
+    ;
+
+    align-items: center;
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+}
+
+.section1 {
+    grid-area: section1;
+    background-color: beige;
+}
+
+.section2 {
+    grid-area: section2;
+    background-color: beige;
+}
+
+
+
+
+/* ]navegacion */
+
+.letra_index_nav:hover{
+    font-size: 25px;
+    background-color: #d04b36;
+    border-radius: 50px;
+   }
+
+
+   .letra_servicios_nav:hover{
+    font-size: 25px;
+    background-color: #e36511;
+    border-radius: 50px;
+   }
+
+   .letra_sobre_nav:hover{
+    font-size: 25px;
+    background-color: #ffba00;
+    border-radius: 50px;
+   }
+
+   .letra_contacto_nav:hover{
+    font-size: 25px;
+    background-color: #00b180;
+    border-radius: 50px;
+   }
+
+   .letra_testimonio_nav:hover{
+    font-size: 25px;
+    background-color: #147aab;
+    border-radius: 50px;
+   }
+
+
+
+
+.section1 {
+
+    /* unidad relativa 16px =1rem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1 p {
+
+    max-width: 550px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.img {
+    width: 8900px;
+}
+
+.imgIndex:hover {
+    transform: scale(1.3);
+}
+
+.section2 {
+    max-width: 550px;
+    text-align: center;
+    /* margin: 1rem; */
+}
+
+
+
+footer {
+    background-color: #a8eee8;
+    color: #fff;
+}
+
+.containerfooter {
+    align-items: center;
+    padding: 10px;
+}
+
+.footerIcon {
+    text-align: center;
+    color: white;
+}
+
+.primeraparte {
+    margin-bottom: 100px;
+}
+
+.titular {
+    display: inline-block;
+    max-width: 205px;
+}
+
+
+
+
+
+
+.animation button {
+
+    transform: skew(20deg);
+    transition: 1s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-areas:
+            "section1 section1 section1 section1"
+            "section2 section2 section2 section2";
+    }
+
+    .containerfooter {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container-fluid img {
+        width: 50px;
+    }
+
+    .main_sobre_mi img {
+        justify-content: center;
+        text-align: center;
+        width: 30rem;
+        align-items: center;
+        margin: 30px;
+
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-areas:
+            "section1 section1 section1 section1"
+            "section2 section2 section2 section2";
+    }
+
+
+}
