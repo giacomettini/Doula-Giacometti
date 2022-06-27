@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap");
 * {
   margin: 0%;
@@ -11,6 +12,33 @@
 
 .bodyContacto {
   background-color: #e7a4f5; }
+
+.esImportante h1 {
+  color: #0e0303;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 75px;
+  letter-spacing: .15em;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
+
+.videoServicios {
+  margin: 75px;
+  text-align: center; }
 
 .sobremi {
   display: block;
@@ -41,6 +69,36 @@
 .caja:hover {
   height: 450px;
   transition: 1s; }
+
+.bannerTestimonio {
+  background: linear-gradient(135deg, #e3e3e3 0%, #5d6874 100%); }
+
+.animated-shadow {
+  color: #ffffff;
+  margin: 50px;
+  border: radius 25px;
+  font: normal 140px Varela Round, sans-serif;
+  height: 150px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2; }
+
+/*Animación para rotar las sombras*/
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641, 1px -1px 0 #da0641, -4px 4px 0 #13f1fc, -3px 3px 0 #13f1fc, -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc; }
+  25% {
+    text-shadow: -4px -4px 0 #13f1fc, -3px -3px 0 #13f1fc, -2px -2px 0 #13f1fc, -1px -1px 0 #13f1fc, 4px 4px 0 #da0641, 3px 3px 0 #da0641, 2px 2px 0 #da0641, 1px 1px 0 #da0641; }
+  50% {
+    text-shadow: -4px 4px 0 #da0641, -3px 3px 0 #da0641, -2px 2px 0 #da0641, -1px 1px 0 #da0641, 4px -4px 0 #13f1fc, 3px -3px 0 #13f1fc, 2px -2px 0 #13f1fc, 1px -1px 0 #13f1fc; }
+  75% {
+    text-shadow: 4px 4px 0 #13f1fc, 3px 3px 0 #13f1fc, 2px 2px 0 #13f1fc, 1px 1px 0 #13f1fc, -4px -4px 0 #da0641, -3px -3px 0 #da0641, -2px -2px 0 #da0641, -1px -1px 0 #da0641; }
+  100% {
+    text-shadow: 4px -4px 0 #da0641, 3px -3px 0 #da0641, 2px -2px 0 #da0641, 1px -1px 0 #da0641, -4px 4px 0 #13f1fc -3px 3px 0 #13f1fc, -2px 2px 0 #13f1fc, -1px 1px 0 #13f1fc; } }
 
 .containertexto {
   display: grid;
