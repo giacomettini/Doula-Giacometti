@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
-
 * {
     margin: 0%;
     padding: 0%;
 }
 
 @import './variables/colores';
+@import './variables/tipografia';
+@import './variables/tamanios';
+@import './variables/extend';
+
 @import './contacto.scss';
 @import './servicios.scss';
 @import './sobre_mi.scss';
@@ -50,53 +52,55 @@
 
 /* ]navegacion */
 
-.letra_index_nav:hover{
+.letra_index_nav:hover {
     font-size: 25px;
     background-color: #d04b36;
     border-radius: 50px;
-   }
+}
 
 
-   .letra_servicios_nav:hover{
+.letra_servicios_nav:hover {
     font-size: 25px;
     background-color: #e36511;
     border-radius: 50px;
-   }
+}
 
-   .letra_sobre_nav:hover{
+.letra_sobre_nav:hover {
     font-size: 25px;
     background-color: #ffba00;
     border-radius: 50px;
-   }
+}
 
-   .letra_contacto_nav:hover{
+.letra_contacto_nav:hover {
     font-size: 25px;
     background-color: #00b180;
     border-radius: 50px;
-   }
+}
 
-   .letra_testimonio_nav:hover{
+.letra_testimonio_nav:hover {
     font-size: 25px;
     background-color: #147aab;
     border-radius: 50px;
-   }
+}
 
 
 
 
 .section1 {
-
-    /* unidad relativa 16px =1rem */
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 40px;
+
+
 }
 
 .section1 p {
+    align-items: center;
 
-    max-width: 550px;
     text-align: center;
     margin: 1rem;
+    width: $parrafo1;
 }
 
 .img {
@@ -108,9 +112,17 @@
 }
 
 .section2 {
+    display: flex;
+    flex-direction: column;
     max-width: 550px;
-    text-align: center;
-    /* margin: 1rem; */
+    align-items: center;
+    @extend %estilosParrafo;
+
+    .importante {
+        font-size: 25px;
+        @include claro ()
+    }
+
 }
 
 
@@ -126,6 +138,7 @@ footer {
 }
 
 .footerIcon {
+    font-size: 35px;
     text-align: center;
     color: white;
 }

@@ -1,0 +1,17 @@
+// EXTEND
+
+%estilosParrafo{
+    text-align: center;
+    font-family: $Roboto;
+    font-size: 25px;
+}
+
+
+// MIXIN
+@mixin claro{
+    background-color: $colorFondo;
+    color: $textoPrimario;
+
+}
+
+

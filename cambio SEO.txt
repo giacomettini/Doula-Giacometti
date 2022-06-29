@@ -9,3 +9,5 @@ Resalte palabras con el uso de las etiqueta STRONG en el Index.
 Agregue una url al Inicio que vincula con el titulo principal y la imagen al hacer click en el mismo.
 
 Cree un sitemap por medio de XML sitemaps.
+
+Cambie las imagenes a url con cloudinary.
