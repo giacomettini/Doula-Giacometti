@@ -1,0 +1,11 @@
+Agregue en todas las paginas del proyecto las keywords que identifican al proyecto.
+
+Agregue en todas las paginas del proyecto las descripcion de cada una de ellas.
+
+Cambie los "titles" de las paginas.
+ 
+Resalte palabras con el uso de las etiqueta STRONG en el Index. 
+
+Agregue una url al Inicio que vincula con el titulo principal y la imagen al hacer click en el mismo.
+
+Cree un sitemap por medio de XML sitemaps.
