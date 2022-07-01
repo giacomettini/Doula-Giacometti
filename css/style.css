@@ -120,6 +120,12 @@
   background-color: beige; }
 
 /* ]navegacion */
+header .container-fluid {
+  font-size: 20px; }
+
+header img {
+  opacity: 1; }
+
 .letra_index_nav:hover {
   font-size: 25px;
   background-color: #d04b36;
