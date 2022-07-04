@@ -45,6 +45,56 @@
   margin: 75px;
   text-align: center; }
 
+.container {
+  margin-top: 50px;
+  text-align: center;
+  display: grid;
+  height: 500px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "imagen titulo" "imagen txt_servicios" "imagen button_servicios"; }
+
+.titulo {
+  grid-area: titulo;
+  text-align: center;
+  margin: auto; }
+
+.txt_servicios {
+  font-size: 20px;
+  grid-area: txt_servicios;
+  text-align: center;
+  margin: auto; }
+
+.button_servicios {
+  grid-area: button_servicios;
+  text-align: center;
+  margin: auto; }
+
+.imagen {
+  padding-right: 30px;
+  grid-area: imagen;
+  text-align: center;
+  margin: auto; }
+  .imagen img {
+    border-radius: 150px;
+    border: 3px outset #d664cf; }
+
+.s_button {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  background-color: #384562;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  height: 39px;
+  line-height: 39px;
+  padding: 0 23px;
+  border: 2px solid #303030;
+  display: inline-block;
+  text-decoration: none; }
+
 .sobremi {
   display: block;
   position: relative;
