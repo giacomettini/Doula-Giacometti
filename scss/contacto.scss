@@ -1,10 +1,12 @@
-.contacto {
-    padding-top: 80px;
-    padding-bottom: 120px;
-    background-color: rgb(231, 164, 245);
-    margin-bottom: 40px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.bodyContacto {
-    background-color: rgb(231, 164, 245);
+
+.main_contacto {
+    min-height: 800px;
+    background-color: $colorFondoBloque5;
+    padding: 15px;
 }
+

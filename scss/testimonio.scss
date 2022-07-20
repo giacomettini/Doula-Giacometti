@@ -1,40 +1,57 @@
 .container_testimonios {
-  margin: 150px;
   font-size: 18px;
   font-family: Arial;
 }
 
+.main_testimonios {
+  background-color: colorFondoBloque1;
+}
+
 .caja {
+  background-color: $colorFondoBloque5;
+
+  img {
+    margin: 15px;
+    width: 100px;
+    border-radius: 5px;
+  }
+
+  width: auto;
+  display: grid;
+  padding: 15px;
+  overflow: hidden;
   border-radius: 15px;
-  height: 150px;
-  margin: 15px;
-  margin-top: 15PX;
-  text-align: center;
+  margin: 25px;
 }
 
 
 .caja:hover {
+  img {
+    width: 150px;
+    transition: 3s;
+  }
 
-  height: 450px;
-  transition: 1s;
+  height: auto;
 }
 
 .bannerTestimonio {
+  border-radius: 25px;
+  margin: 35px;
   background: linear-gradient(135deg, rgb(227, 227, 227) 0%, rgb(93, 104, 116) 100%);
 }
 
 .animated-shadow {
-  color: #ffffff;
+  color: rgb(128, 13, 78);
   margin: 50px;
   border: radius 25px;
-  font: normal 140px Varela Round, sans-serif;
+  font: normal 100px Varela Round, sans-serif;
   height: 150px;
   left: 0;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
-  width: 100%;
-  animation: move linear 2000ms infinite;
+  width: auto;
+  animation: move linear 5000ms infinite;
   z-index: 2
 }
 
@@ -45,42 +62,42 @@
   0% {
 
     text-shadow:
-      4px -4px 0 #da0641,
-      3px -3px 0 #da0641,
-      2px -2px 0 #da0641,
-      1px -1px 0 #da0641,
-      -4px 4px 0 #13f1fc,
-      -3px 3px 0 #13f1fc,
-      -2px 2px 0 #13f1fc,
-      -1px 1px 0 #13f1fc;
+      4px -4px 0 $colorFondoBloque5,
+      3px -3px 0 $colorFondoBloque5,
+      2px -2px 0 $colorFondoBloque5,
+      1px -1px 0 $colorFondoBloque5,
+      -4px 4px 0 $colorFondoBloque1,
+      -3px 3px 0 $colorFondoBloque1,
+      -2px 2px 0 $colorFondoBloque1,
+      -1px 1px 0 $colorFondoBloque1;
 
   }
 
   25% {
 
     text-shadow:
-      -4px -4px 0 #13f1fc,
-      -3px -3px 0 #13f1fc,
-      -2px -2px 0 #13f1fc,
-      -1px -1px 0 #13f1fc,
-      4px 4px 0 #da0641,
-      3px 3px 0 #da0641,
-      2px 2px 0 #da0641,
-      1px 1px 0 #da0641;
+      -4px -4px 0 $colorFondoBloque1,
+      -3px -3px 0 $colorFondoBloque1,
+      -2px -2px 0 $colorFondoBloque1,
+      -1px -1px 0 $colorFondoBloque1,
+      4px 4px 0 $colorFondoBloque5,
+      3px 3px 0 $colorFondoBloque5,
+      2px 2px 0 $colorFondoBloque5,
+      1px 1px 0 $colorFondoBloque5;
 
   }
 
   50% {
 
     text-shadow:
-      -4px 4px 0 #da0641,
-      -3px 3px 0 #da0641,
-      -2px 2px 0 #da0641,
-      -1px 1px 0 #da0641,
-      4px -4px 0 #13f1fc,
-      3px -3px 0 #13f1fc,
-      2px -2px 0 #13f1fc,
-      1px -1px 0 #13f1fc;
+      -4px 4px 0 $colorFondoBloque5,
+      -3px 3px 0 $colorFondoBloque5,
+      -2px 2px 0 $colorFondoBloque5,
+      -1px 1px 0 $colorFondoBloque5,
+      4px -4px 0 $colorFondoBloque1,
+      3px -3px 0 $colorFondoBloque1,
+      2px -2px 0 $colorFondoBloque1,
+      1px -1px 0 $colorFondoBloque1;
 
   }
 
@@ -88,14 +105,14 @@
 
     text-shadow:
 
-      4px 4px 0 #13f1fc,
-      3px 3px 0 #13f1fc,
-      2px 2px 0 #13f1fc,
-      1px 1px 0 #13f1fc,
-      -4px -4px 0 #da0641,
-      -3px -3px 0 #da0641,
-      -2px -2px 0 #da0641,
-      -1px -1px 0 #da0641;
+      4px 4px 0 $colorFondoBloque1,
+      3px 3px 0 $colorFondoBloque1,
+      2px 2px 0 $colorFondoBloque1,
+      1px 1px 0 $colorFondoBloque1,
+      -4px -4px 0 $colorFondoBloque5,
+      -3px -3px 0 $colorFondoBloque5,
+      -2px -2px 0 $colorFondoBloque5,
+      -1px -1px 0 $colorFondoBloque5;
 
   }
 
@@ -103,13 +120,14 @@
 
     text-shadow:
 
-      4px -4px 0 #da0641,
-      3px -3px 0 #da0641,
-      2px -2px 0 #da0641,
-      1px -1px 0 #da0641,
-      -4px 4px 0 #13f1fc -3px 3px 0 #13f1fc,
-      -2px 2px 0 #13f1fc,
-      -1px 1px 0 #13f1fc;
+      4px -4px 0 $colorFondoBloque5,
+      3px -3px 0 $colorFondoBloque5,
+      2px -2px 0 $colorFondoBloque5,
+      1px -1px 0 $colorFondoBloque5,
+      -4px 4px 0 $colorFondoBloque1,
+      -3px 3px 0 $colorFondoBloque1,
+      -2px 2px 0 $colorFondoBloque1,
+      -1px 1px 0 $colorFondoBloque1;
 
   }
 
